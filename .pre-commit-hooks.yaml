@@ -3,5 +3,19 @@
   description: "Run 'ruff' for extremely fast Python linting"
   entry: ruff --fix --exit-non-zero-on-fix
   language: conda
-  require_serial: false
-  types: [python]
+  types_or: [python, pyi]
+  args: []
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
+
+- id: ruff-format-conda
+  name: ruff-format-conda
+  description: "Run 'ruff format' for extremely fast Python formatting"
+  entry: ruff format --force-exclude
+  language: conda
+  types_or: [python, pyi]
+  args: []
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
