@@ -1,6 +1,10 @@
 - id: ruff-conda
   name: ruff-conda
+<<<<<<< before updating
   description: "Run 'ruff' for extremely fast Python linting"
+=======
+  description: 'Run 'ruff' for extremely fast Python linting'
+>>>>>>> after updating
   entry: ruff --fix --exit-non-zero-on-fix
   language: conda
   types_or: [python, pyi]
