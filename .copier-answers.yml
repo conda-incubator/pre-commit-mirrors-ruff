@@ -2,7 +2,7 @@
 _commit: v0.1.6
 _src_path: git@github.com:quantco/copier-template-pre-commit-mirrors
 conda_package: ruff
-description: Run 'ruff' for extremely fast Python linting
+description: Run `ruff` for extremely fast Python linting
 entry: ruff --fix --exit-non-zero-on-fix
 tool: ruff
 url: https://github.com/charliermarsh/ruff
